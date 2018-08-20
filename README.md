@@ -1,21 +1,16 @@
 # ElixirExample
 
-**TODO: Add description**
+Basic Elixir example app with Cowboy 2 HTTP Server & Plug.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `elixir_example` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:elixir_example, "~> 0.1.0"}
-  ]
-end
+```bash
+mix deps.get
+mix run --no-halt
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/elixir_example](https://hexdocs.pm/elixir_example).
+## Routes
 
+1. `/`: 200 - Hello World
+2. `/:something`: 404 - Not Found
+3. `/sample/:message`: 200 - [message] 
